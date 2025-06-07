@@ -43,7 +43,7 @@ class _NewExpenseState extends State<NewExpense> {
     final enteredAmount = double.tryParse(_amountController
         .text); // tryParse("hello") => null , tryParsse("3.14") => 3.14
     final amountIsInvalid =
-        enteredAmount == null || enteredAmount <= 0; /////////21-3min
+        enteredAmount == null || enteredAmount <= 0; 
 
     if (_titalController.text.trim().isEmpty ||
         amountIsInvalid ||
